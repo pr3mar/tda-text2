@@ -12,7 +12,7 @@ config/spark-defaults.conf
 .DS_STORE*
 queue/*
 db_dumps/*
-
+dataset/*.txt
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
