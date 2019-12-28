@@ -1,18 +1,16 @@
 import numpy as np
 import requests
 import nltk
+from laserembeddings import Laser
 # nltk.download('punkt')  # run this line the first time only
+
 tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
-port = 8080  # the same as from the docker command
+laser = Laser()
 
 if __name__ == '__main__':
-    url = f"http://127.0.0.1:{port}/vectorize"
-    text = "Hey, how are you? I'm OK and you?! this is \"another sentence\""
+    text = "Hey, how are you? I'm OK and you?! this is \"another sentence\". Woo hooo"
     sentences = tokenizer.tokenize(text)
     print(sentences)
-    for s in sentences:
-        params = {"q": s, "lang": "en"}
-        resp = np.array(requests.get(url=url, params=params).json()["embedding"])
-        print(resp.shape)
-        print(resp)
-
+    embeddings = laser.embed_sentences(sentences, lang='en')
+    print(embeddings.shape)
+    print(embeddings)
