@@ -1,0 +1,58 @@
+{
+    "mysticism": [
+        "William Wymark Jacobs",
+        "G K Chesterton"
+    ],
+    "hystorical": [
+        "George Alfred Henty",
+        "William Dean Howells",
+        "Henry James",
+        "Charles Kingsley",
+        "James Fenimore Cooper",
+        "Sir Walter Scott",
+        "William Makepeace Thackeray"
+    ],
+    "children": [
+        "R M Ballantyne",
+        "Andrew Lang",
+        "Charlotte Mary Yonge",
+        "Jacob Abbott",
+        "Mark Twain",
+        "Charles Kingsley",
+        "Rudyard Kipling",
+        "Frank Richard Stockton",
+        "Thornton Waldo Burgess"
+    ],
+    "adventure": [
+        "Robert Louis Stevenson",
+        "Bret Harte",
+        "Edward Stratemeyer",
+        "Henry Rider Haggard",
+        "Jack London",
+        "Harold Bindloss",
+        "Daniel Defoe"
+    ],
+    "psychological": [
+        "Nathaniel Hawthorne",
+        "Joseph Conrad"
+    ],
+    "social": [
+        "Anthony Trollope",
+        "Henry James", "Jack London", "Mark Twain",
+        "Charles Dickens",
+        "John Galsworthy",
+        "P G Wodehouse",
+        "Louisa May Alcott",
+        "Wilkie Collins"
+    ],
+    "detective": [
+        "Sir Arthur Conan Doyle",
+        "Edward Phillips Oppenheim",
+        "Wilkie Collins"
+    ],
+    "plays": [
+        "George Bernard Shaw",
+        "John Ruskin",
+        "Lyman Frank Baum"
+    ]
+}
