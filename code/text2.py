@@ -50,7 +50,6 @@ def get_genre_matrix(genre, authors, remove_stop_words):
     M = np.zeros((1024, len(current)))  # each column is a document
     for i, book in enumerate(current):
         M[:, i] = get_document_matrix(book, genre, remove_stop_words)
-        break
     logger.debug(f"[{genre}] Saving matrix to cache.")
     np.save(f"../cache/{genre}", M)
     return M
