@@ -7,7 +7,6 @@
         "George Alfred Henty",
         "William Dean Howells",
         "Henry James",
-        "Charles Kingsley",
         "James Fenimore Cooper",
         "Sir Walter Scott",
         "William Makepeace Thackeray"
@@ -38,12 +37,10 @@
     ],
     "social": [
         "Anthony Trollope",
-        "Henry James", "Jack London", "Mark Twain",
         "Charles Dickens",
         "John Galsworthy",
         "P G Wodehouse",
-        "Louisa May Alcott",
-        "Wilkie Collins"
+        "Louisa May Alcott"
     ],
     "detective": [
         "Sir Arthur Conan Doyle",
