@@ -51,7 +51,10 @@ def get_genre_matrix(genre, authors, remove_stop_words):
     for i, book in enumerate(current):
         M[:, i] = get_document_matrix(book, genre, remove_stop_words)
     logger.debug(f"[{genre}] Saving matrix to cache.")
-    np.save(f"../cache/{genre}", M)
+    if remove_stop_words:
+        np.save(f"../cache/stopwords_excluded/full_dimension/{genre}", M)
+    else:
+        np.save(f"../cache/full_dimension/full_dimension/{genre}", M)
     return M
 
 
@@ -61,6 +64,7 @@ def get_document_matrix(fname, genre, remove_stop_words):
         begin_t = time()
         sentences = tokenizer.tokenize(re.sub(r"(\s|\n)+", " ", file.read()))
         if remove_stop_words:
+            logger.debug(f"[{genre}][{fname}] Removing stop words.")
             sentences = [" ".join([w for w in word_tokenize(s) if w not in stop_words]) for s in sentences]
         logger.debug(f"[{genre}][{fname}] Time used for tokenizing: {time() - begin_t:.3f}, #sentences: {len(sentences)}")
         begin_e = time()
@@ -71,8 +75,8 @@ def get_document_matrix(fname, genre, remove_stop_words):
 
 
 if __name__ == '__main__':
-    pathlib.Path('../cache').mkdir(parents=True, exist_ok=True)
+    pathlib.Path('../cache/').mkdir(parents=True, exist_ok=True)
     begin = time()
     data = json.load(open("../data_categories.json"))
-    genre_data = get_genre_data(data)
+    genre_data = get_genre_data(data, remove_stop_words=True)
     logger.info(f"Total time: {time() - begin}")
