@@ -1,7 +1,11 @@
 import numpy as np
 import os
 
-DATA_PATH = '../cache/all_words/'
+all_words = False
+
+all_vs_stop_word_path = 'all_words' if all_words else 'stopwords_excluded'
+DATA_PATH = f'../cache/{all_vs_stop_word_path}/'
+
 r = 5
 
 for file_name in os.listdir(DATA_PATH + 'full_dimension/'):

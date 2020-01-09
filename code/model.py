@@ -5,7 +5,10 @@ from bisect import bisect_left, bisect_right
 import pickle
 import matplotlib.pyplot as plt
 
-DATA_PATH = '../cache/all_words/reduced_dimension/'
+all_words = False
+
+all_vs_stop_word_path = 'all_words' if all_words else 'stopwords_excluded'
+DATA_PATH = f'../cache/{all_vs_stop_word_path}/reduced_dimension/'
 
 file_name_to_persistence = {}
 
@@ -94,4 +97,4 @@ with open(DATA_PATH + 'file_name_to_persistence.P', 'wb') as pickle_file:
 for filename, persistence in file_name_to_persistence.items():
     plt.figure()
     fig = gudhi.plot_persistence_diagram(persistence, legend=True)
-    fig.savefig(f"../Persistence diagram plots/{filename.split('.')[0]}.png")
+    fig.savefig(f"../Persistence diagram plots/{all_vs_stop_word_path}/{filename.split('.')[0]}.png")

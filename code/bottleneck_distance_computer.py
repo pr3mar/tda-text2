@@ -3,7 +3,7 @@ import gudhi
 from pathlib import Path
 import numpy as np
 
-all_words = True
+all_words = False
 
 all_vs_stop_word_path = 'all_words' if all_words else 'stopwords_excluded'
 DATA_PATH = f'../cache/{all_vs_stop_word_path}/reduced_dimension/'
