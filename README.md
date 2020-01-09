@@ -9,7 +9,9 @@ pipenv install
 pipenv run <insert command here> # see https://realpython.com/pipenv-guide/ for more
 ```
 
-Dependency is [LASER](https://github.com/facebookresearch/LASER). Follow the instructions [here](https://github.com/facebookresearch/LASER/tree/master/docker) to setup the API via docker.
+Dependencies are: 
+* [LASER](https://github.com/facebookresearch/LASER). Follow the instructions [here](https://github.com/facebookresearch/LASER/tree/master/docker) to setup the API via docker.
+* [Gudhi](https://gudhi.inria.fr/python/latest/). Installation instructions can be found [here](https://gudhi.inria.fr/python/latest/installation.html)
 
 ---
 ## Categories 
