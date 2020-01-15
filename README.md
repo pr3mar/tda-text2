@@ -1,5 +1,7 @@
 # tda-text2
 
+
+## Development dependencies
 Link to the [data set](https://drive.google.com/uc?id=17WBziFbt9nhAW5iV-yHPHmCfquBPrjJO&export=download)
 
 Setting up:
@@ -11,25 +13,8 @@ pipenv run <insert command here> # see https://realpython.com/pipenv-guide/ for 
 
 Dependencies are: 
 * [LASER](https://github.com/facebookresearch/LASER). Follow the instructions [here](https://github.com/facebookresearch/LASER/tree/master/docker) to setup the API via docker.
-* [Gudhi](https://gudhi.inria.fr/python/latest/). Installation instructions can be found [here](https://gudhi.inria.fr/python/latest/installation.html)
+* [Gudhi](https://gudhi.inria.fr/python/latest/). Installation instructions can be found [here](https://gudhi.inria.fr/python/latest/installation.html), not part of `Pipenv`
 
----
-## Categories 
 
-Children's novels:
-- Thornton Waldo Burgess (31)
-- Ballantyne, R. M. (88)
-
-Detective Fiction:
-- Sir Arthur Conan Doyle (57)
-
-Adventure Fiction:
-- Mark Twain (48)
-- Jack London (48)
-
-Realistic novels:
-- Charles Dickens (61)
-
-Non-fiction:
-- Charles Darwin (20)
-- Abraham Lincoln (16)
+## Project report
+The project report is available [here](./report/main.pdf)
